@@ -1,0 +1,70 @@
+.navbar{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.6rem 8rem;
+    background-color: var(--nav-color);
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a {
+    transition: .3s;
+    text-decoration: none;
+    padding: 0 3.3rem;
+    color: #92AAFF;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-list a:hover{
+    color: #7088DD;
+    transition: .3s;
+}
+
+.container-botoes-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.btn-sign-up{
+    background-color: #92AAFF;
+    padding: 1rem 1.8rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .3s;
+    color: var(--nav-color);
+    cursor: pointer;
+}
+
+.btn-sign-up:hover{
+    background-color: var(--roxo-escuro);
+    transition: .5s;
+    color: #000;
+}
+
+.btn-sign-in{
+    background-color: transparent;
+    padding: 1rem 1.7rem;
+    border: 2px solid #92AAFF ;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .3s;
+    color: var(--btn-color);
+    cursor: pointer;
+
+}
+
+.btn-sign-in:hover{
+    background-color: #92AAFF;
+    transition: .5s;
+    color: #000;
+}

@@ -1,0 +1,59 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Archivo', sans-serif;
+}
+
+.banner-principal-home {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+
+    background-color: rgb(61, 88, 88);
+}
+
+.banner-content-text{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: auto;
+}
+
+.banner-content-text img{
+    width: 23rem;
+}
+
+.banner-content-text p{
+    color: var(--branco);
+    font-size: 1.6rem;
+}
+
+.banner-content-text h1{
+    color: var(--branco);
+    font-size: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.btn_banner{
+    justify-content:start;
+    margin-top: 4.5rem;
+    padding: .5rem 4rem;
+    background-color: var(--btn-color) ;
+    color: #0A0A0A;
+    border: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 26rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.btn_banner:hover{
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    transition: all .6s ease;
+    color: var(--btn-color);
+}
