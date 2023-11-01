@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Card from '../components/Card'
+import Navbar from '../../components/Navbar/Navbar'
+import Card from '../../components/Card/Card'
 
-import NexusLogoBanner from '../assets/nexus_logo_banner.svg'
+import NexusLogoBanner from '../assets/Logo/nexus_logo_banner.svg'
 import './Home.css'
 
 const Home = () => {
@@ -20,17 +20,14 @@ const Home = () => {
 
                 <button className='btn_banner' onClick={()=> console.log(`olá`)}>CRIAR UMA CONTA AGORA</button>
             </div>
-
             <div className="banner-mockup">
                 <img src="" alt="" />
             </div>
         </div>
-
+        
         <div className='banner-cartoes'>
             <Card/>
         </div>
-
-
     </div>
   )
 }
