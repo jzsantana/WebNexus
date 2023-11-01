@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Card from '../../components/Card/Card'
 
-import NexusLogoBanner from '../assets/Logo/nexus_logo_banner.svg'
+import NexusLogoBanner from '../../assets/Logos/nexus_logo_banner.svg'
 import './Home.css'
 
 const Home = () => {

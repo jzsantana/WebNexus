@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import NexusLogo from '../assets/NEXUSlogo.svg'
+import NexusLogo from '../../assets/Logos/NEXUSlogo.svg'
 
 const Navbar = () => {
   return (
