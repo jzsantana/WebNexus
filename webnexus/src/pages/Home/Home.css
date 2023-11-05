@@ -57,3 +57,25 @@
     transition: all .6s ease;
     color: var(--btn-color);
 }
+
+.banner-cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+.banner-cartoes h1{
+    color: var(--branco);
+}
+
+.banner-cartoes-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}

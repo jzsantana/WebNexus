@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
-import Card from '../../components/Card/Card'
+import ModalCard from '../../components/ModalCard/ModalCard'
 
 import NexusLogoBanner from '../../assets/Logos/nexus_logo_banner.svg'
 import './Home.css'
@@ -26,7 +26,11 @@ const Home = () => {
         </div>
         
         <div className='banner-cartoes'>
-            <Card/>
+            <h1>CONHEÇA NOSSOS CARTÕES</h1>
+            
+            <div className='banner-cartoes-modal'>
+                <ModalCard/>
+            </div>
         </div>
     </div>
   )
