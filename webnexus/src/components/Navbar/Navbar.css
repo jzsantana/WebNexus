@@ -58,7 +58,7 @@
     font-weight: bold;
     font-size: 1rem;
     transition: .3s;
-    color: var(--btn-color);
+    color: var(--roxo-claro);
     cursor: pointer;
 
 }
