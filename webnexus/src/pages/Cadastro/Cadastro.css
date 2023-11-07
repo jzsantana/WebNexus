@@ -1,0 +1,107 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Archivo', sans-serif;
+}
+
+.container-principal-cadastro{
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-cadastro{
+    width: 80%;
+    height: 85vh;
+    background-color: #111111;
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.image-div-cad{
+    padding: 3rem;
+    width: 50%;
+    height: 100%;
+    background-color: var(--roxo-claro);
+}
+
+.cadastro-info-div{
+    width: 50%;
+    height: 100%;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #0a0a0a;
+}
+
+.cad-div-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cad-div-logo img{
+    width: 60%;
+}
+
+.input-nome, .input-cpf, .input-email, .input-nascimento,
+.input-estado, .input-endereco, .input-bairro{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: .6rem;
+
+    width: 31rem;
+    height: 3rem;
+    background-color:transparent;
+    border: 2px solid #333333;
+}
+
+.div-endereco-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.input-cep, .input-cidade{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: .6rem;
+
+    width: 15rem;
+    height: 3rem;
+    background-color:transparent;
+    border: 2px solid #333333;
+}
+
+.input-nome input, .input-cpf input, .input-email input, .input-nascimento input,
+.input-estado input, .input-endereco input, .input-bairro input, .input-cep input, .input-cidade input{
+    width: 90%;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    color: #333333;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.input-nome input:focus, .input-cpf input:focus, .input-email input:focus, 
+.input-nascimento input:focus,.input-estado input:focus, .input-endereco input:focus, 
+.input-bairro input:focus, .input-cep input:focus, .input-cidade input:focus{
+    border: none;
+    outline-offset: 0px;
+    outline: none;
+}

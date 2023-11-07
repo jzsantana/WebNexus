@@ -36,13 +36,22 @@
     -webkit-box-shadow:0px 0px 158px 38px rgba(31,31,31,0.29);
     -moz-box-shadow: 0px 0px 158px 38px rgba(31,31,31,0.29);
     box-shadow: 0px 0px 158px 38px rgba(31,31,31,0.29);
-    }
+}
 
 .image-div-login{
+    padding: 3rem;
     width: 50%;
     height: 100%;
     background-color: var(--roxo-claro);
+    display: flex;
+    justify-content: left;
+    align-items: end;
     background-image: url('../../assets/spirals.png');
+}
+
+.image-div-login h1{
+    font-size: 4.5rem;
+    background-color: var(--roxo-claro);
 }
 
 .login-info-div{
