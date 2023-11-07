@@ -76,6 +76,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     padding: 2rem;
 }
+
+/*  pra fazer o efeito nos cartpes usar esse link para fazer o efeito glass dos cartoes 
+https://codepen.io/fydsa/pen/VwWXdZm
+ */
