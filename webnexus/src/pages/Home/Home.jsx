@@ -25,7 +25,7 @@ const Home = () => {
             </div>
         </div>
         
-        <div className='banner-cartoes'>
+        <div className='banner-cartoes' id='banner-cartoes-id'>
             <h1>CONHEÇA NOSSOS CARTÕES</h1>
             
             <div className='banner-cartoes-modal'>

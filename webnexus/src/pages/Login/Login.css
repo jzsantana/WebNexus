@@ -51,6 +51,9 @@
 
 .image-div-login h1{
     font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'Archivo Black', sans-serif;
+    color: #111111;
     background-color: var(--roxo-claro);
 }
 

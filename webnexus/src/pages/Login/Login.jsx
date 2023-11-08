@@ -1,10 +1,6 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-
 import { FaBuildingUser, FaUserLarge, FaEyeSlash} from 'react-icons/fa6'
 import Logo from '../../assets/Logos/nexus_logo_banner.svg'
-import Porquinho from '../../assets/Piggy.svg'
-
 import './Login.css'
 
 const Login = () => {
@@ -34,7 +30,9 @@ const Login = () => {
                         <input type="password" placeholder='Insira sua senha'/>
                     </div>
                     <p className='forgot-password'>Esqueceu a senha?</p>
-                    <button className="btn-info-login">LOGIN</button>
+                    <button className="btn-info-login"
+                        onClick={() => console.log('oi, voce esta entrando em sua conta')}
+                    >LOGIN</button>
                 </div>
             </div>
         </div>
