@@ -3,7 +3,14 @@ import './ModalCard.css'
 
 const Card = () => {
   return (
-    <div>Card</div>
+    <div>
+      <div className="card-info">
+        
+      </div>
+      <div className="card-detalhe">
+
+      </div>
+    </div>
   )
 }
 

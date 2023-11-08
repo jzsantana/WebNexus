@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './ModalCard.css'
+import Chip from '../../assets/chip_cartao.png'
 
 const Card = () => {
 
@@ -32,8 +33,15 @@ const Card = () => {
         <>
             {listaCartoes.map((cardcartao) => (
             <div className='card-cartao' key={cardcartao.id}>
-                <div className='cartao-demostrativo'></div>
-
+                <div className='cartao-demostrativo'>
+                    <div className='div-chip'><img src={Chip} alt="" /></div>
+                    <div className='div-card-number'><p>3333 2222 1111 2525</p></div>
+                    <div className="div-line-separator"></div>
+                    <div style={{display: 'flex', justifyContent:"space-between"}}>
+                        <p>Juliana Baltazar</p>
+                        <p>29/10</p>
+                    </div>
+                </div>
                 <h2>{cardcartao.title}</h2>
                 <p>{cardcartao.text}</p>
             </div>
