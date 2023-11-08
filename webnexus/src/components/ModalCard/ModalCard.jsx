@@ -37,7 +37,7 @@ const Card = () => {
                     <div className='div-chip'><img src={Chip} alt="" /></div>
                     <div className='div-card-number'><p>3333 2222 1111 2525</p></div>
                     <div className="div-line-separator"></div>
-                    <div style={{display: 'flex', justifyContent:"space-between"}}>
+                    <div  className='div-info-cliente-cartao' >
                         <p>Juliana Baltazar</p>
                         <p>29/10</p>
                     </div>
