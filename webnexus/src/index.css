@@ -9,6 +9,8 @@
   --nav-color : #111111;
   --roxo-claro: #92AAFF;
   --roxo-escuro: #7088DD;
+  --turquesa: #55E9E0;
+  --verde: #55E9A2;
   --preto: #000;
   --branco: #fff;
 }
@@ -19,21 +21,18 @@ body{
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #111111 #1c1c1c;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #1c1c1c;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #111111;
-    border-radius: 10px;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111111 #1c1c1c;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #111111;
+  border-radius: 10px;
+}

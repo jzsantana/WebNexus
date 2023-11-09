@@ -105,3 +105,14 @@
     outline-offset: 0px;
     outline: none;
 }
+
+.image-div-cad{
+    /* padding: 3rem; */
+    width: 50%;
+    height: 100%;
+    background-color: var(--roxo-claro);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    background-image: url('../../assets/spirals2.png')
+}
