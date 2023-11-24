@@ -1,5 +1,5 @@
 .card-cartao{
-    background-color: #212121;
+    background-color: var(--nav-color);
     padding: 2rem;
     max-width: 25rem;
     height: 30.6rem;

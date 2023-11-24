@@ -27,9 +27,19 @@ const Home = () => {
         
         <div className='banner-cartoes' id='banner-cartoes-id'>
             <h1>CONHEÇA NOSSOS CARTÕES</h1>
-            
             <div className='banner-cartoes-modal'>
                 <ModalCard/>
+            </div>
+        </div>
+
+        <div className="banner-aplicatico">
+            <h1>CONHEÇA NOSSO APLICATIVO</h1>
+            <div></div>
+        </div>
+
+        <div className="banner-blog">
+            <h1>CONHEÇA NOSSO BLOG</h1>
+            <div className="container-blog">
             </div>
         </div>
     </div>
