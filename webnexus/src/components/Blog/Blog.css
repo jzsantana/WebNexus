@@ -26,12 +26,6 @@
 .separator-2{
     width: 25%;
     height: 2px;
-    display: none;
-}
-
-.separator-2:hover{
-    width: 25%;
-    height: 2px;
 }
 
 .container-blog-1 p{
