@@ -4,6 +4,7 @@ import ModalCard from '../../components/ModalCard/ModalCard'
 
 import NexusLogoBanner from '../../assets/Logos/nexus_logo_banner.svg'
 import './Home.css'
+import Blog from '../../components/Blog/Blog'
 
 const Home = () => {
   return (
@@ -39,8 +40,9 @@ const Home = () => {
 
         <div className="banner-blog">
             <h1>CONHEÇA NOSSO BLOG</h1>
-            <div className="container-blog">
-            </div>
+            <h2>No Blog neXus, estamos comprometidos em trazer informações diretamente para você.</h2>
+            
+            <Blog/>
         </div>
     </div>
   )

@@ -116,3 +116,11 @@
     align-items: end;
     background-image: url('../../assets/spirals2.png')
 }
+
+.image-div-cad h1{
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'Archivo Black', sans-serif;
+    color: #111111;
+    background-color: var(--roxo-claro);
+}

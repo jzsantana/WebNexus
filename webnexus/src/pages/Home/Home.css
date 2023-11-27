@@ -106,14 +106,3 @@ https://codepen.io/fydsa/pen/VwWXdZm
     background-color: rgb(93, 128, 199);
     gap: 2rem;
 }
-
-.container-blog{
-    width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #95c75d;
-    border-radius: 1.5rem;
-}
