@@ -1,7 +1,7 @@
 import React from 'react'
 import './Blog.css'
 
-import Aviao from '../../assets/imagem_aviao.jpg'
+import BlogContent from '../../assets/blogContent.jpg'
 
 const Blog = () => {
   return (
@@ -13,7 +13,7 @@ const Blog = () => {
             </div>
 
             <div className='container-blog-2'>
-                <h1>NEXUS Bank ganha <br></br>premiação de<br></br> Melhor Cartão de <br></br>Débito Internacional</h1>
+                <h1>NEXUS BANK GANHA <br></br>PREMIAÇÃO DE<br></br> MELHOR CARTÃO DE <br></br>DÉBITO INTERNACIONAL</h1>
             </div>
 
             <p>CONTINUAR LENDO</p>
@@ -21,7 +21,7 @@ const Blog = () => {
         </div>
 
         <div className="image-div-blog">
-            <img src={Aviao} alt="" />
+            <img src={BlogContent} alt="" />
         </div>
     </div>
   )

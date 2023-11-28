@@ -2,6 +2,9 @@ import React from 'react'
 import { FaBuildingUser, FaUserLarge, FaEyeSlash} from 'react-icons/fa6'
 import Logo from '../../assets/Logos/nexus_logo_banner.svg'
 import './Login.css'
+import UserPage from '../UserPage/UserPage'
+import { Link } from 'react-router-dom'
+
 
 const Login = () => {
   return (
@@ -17,22 +20,23 @@ const Login = () => {
                     <div className='login-div-logo'>
                         <img src={Logo} alt="" />
                     </div>
-                    <div className='div-input-agencia'>
+                    <div className='div-input'>
                         <span><FaBuildingUser color='#7088DD' size={24}/></span>
                         <input type="text" placeholder='Insira o número de sua agência' />
                     </div>
-                    <div className='div-input-conta'>
+                    <div className='div-input'>
                         <span><FaUserLarge color='#7088DD' size={24}/></span>
                         <input type="text" placeholder='Insira o número de sua conta'/>
                     </div>
-                    <div className='div-input-senha'>
+                    <div className='div-input'>
                         <span><FaEyeSlash color='#7088DD' size={24}/></span>
                         <input type="password" placeholder='Insira sua senha'/>
                     </div>
                     <p className='forgot-password'>Esqueceu a senha?</p>
-                    <button className="btn-info-login"
-                        onClick={() => console.log('oi, voce esta entrando em sua conta')}
-                    >LOGIN</button>
+                    <Link to={"/userpage"}>
+                        <button className="btn-info-login">LOGIN</button>
+                    </Link>
+                    
                 </div>
             </div>
         </div>

@@ -2,20 +2,64 @@
     max-width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding: 1.6rem;
-    background-color: #222222;
+    background-color: var(--nav-color);
     align-items: center;
     color: antiquewhite;
 }
 
 .container-principal-userpage{
     width: 100%;
-    height: 90vh;
+    height: 89vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding: 5rem;
+    background-color: var(--background-color);
+}
 
-    background-color: rgb(12, 12, 12);
+.card-user-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-color);
+    width: 50%;
+    height: 60%;
+    border-radius:1.5rem ;
+
+    -webkit-box-shadow: 0px 0px 117px 5px rgba(46,45,46,0.84);
+    -moz-box-shadow: 0px 0px 117px 5px rgba(46,45,46,0.84);
+    box-shadow: 0px 0px 117px 5px rgba(46,45,46,0.84);
+
+}
+
+:root{
+    --tabs-bg-one: #92AAFF;
+    --white: #fff;
+    --green: #60DDE5;
+    --tabs-bg-two: transparent;
+}
+
+.cartao-userpage{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 95px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+      to bottom right,
+      var(--tabs-bg-one),
+      var(--tabs-bg-two)
+    );
+    box-shadow: -1.5px -1.5px 2px -2px var(--white),
+      5px 5px 30px rgb(0, 0, 0, 0.2);
+    border: 0.5px solid;
+    border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
+    rgba(255, 255, 255, 0.3);
 }
 

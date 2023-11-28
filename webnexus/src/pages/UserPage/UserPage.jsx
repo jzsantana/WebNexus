@@ -1,18 +1,24 @@
 import React from 'react'
 import './UserPage.css'
+import NexusLogo from '../../assets/Logos/NEXUSlogo.svg'
 
-const UserHome = () => {
+const UserPage = () => {
   return (
     <>
         <div className="navbar-userpage">
-            <h1>NEXUS</h1>
+            <img src={NexusLogo} alt="Logo do banco Nexus" />
         </div>
 
         <div className="container-principal-userpage">
+          <div className="card-user-information">
+            <div className="cartao-userpage">
+              
+            </div>
+          </div>
           
         </div>
     </>
   )
 }
 
-export default UserHome
+export default UserPage

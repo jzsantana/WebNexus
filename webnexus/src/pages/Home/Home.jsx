@@ -5,6 +5,7 @@ import ModalCard from '../../components/ModalCard/ModalCard'
 import NexusLogoBanner from '../../assets/Logos/nexus_logo_banner.svg'
 import './Home.css'
 import Blog from '../../components/Blog/Blog'
+import AboutContentImage from '../../assets/AboutUs.png'
 
 const Home = () => {
   return (
@@ -40,9 +41,25 @@ const Home = () => {
 
         <div className="banner-blog">
             <h1>CONHEÇA NOSSO BLOG</h1>
-            <h2>No Blog neXus, estamos comprometidos em trazer informações diretamente para você.</h2>
-            
+            <h2>No Blog NEXUS, estamos comprometidos em trazer informações diretamente para você.</h2>
             <Blog/>
+        </div>
+
+        <div className="sobre-nos">
+            <h1>QUEM SOMOS?</h1>
+            <div className="container-about-us">
+                <div className="content-about-us-1">
+                    <p>No NEXUS Bank, acreditamos que a transparência é a base da confiança. Comprometemo-nos a fornecer soluções bancárias acessíveis e seguras, respaldadas por uma equipe dedicada que valoriza a excelência no atendimento ao cliente.</p>
+                    <p>Com uma abordagem centrada nas pessoas, buscamos simplificar o universo financeiro, tornando cada interação bancária intuitiva e eficiente. Explore as possibilidades conosco e descubra um novo padrão em serviços bancários, onde seu futuro financeiro encontra-se no centro de tudo que fazemos.</p>
+                    <h3 style={{color:'#92AAFF'}}>Bem-vindo ao NEXUS Bank, onde sua jornada financeira é nossa prioridade.</h3>
+                </div>
+
+                <div className="content-about-us-2">
+                    <div className="teste-redondo">
+                        <img src={AboutContentImage} alt="" style={{width: 350, height:350}}/>
+                    </div>  
+                </div>
+            </div>
         </div>
     </div>
   )
