@@ -40,17 +40,18 @@
     color: var(--roxo-escuro);
     position: relative;
     padding: 10px 0;
+    font-weight: 500;
 }
 .container-blog-1 p:hover{
     color: var(--roxo-claro);
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 
 .container-blog-1 p:hover::after{
     width: 26.5%;
     background-color: var(--roxo-claro);
-    transition: 1s all;
+    transition: .9s all;
 }
 
 .separator-2{

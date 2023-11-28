@@ -11,9 +11,15 @@ const UserPage = () => {
 
         <div className="container-principal-userpage">
           <div className="card-user-information">
+            <p>Olá, Júlia. Bem vinda(o) de volta!</p>
+
             <div className="cartao-userpage">
               
+
+
             </div>
+
+            
           </div>
           
         </div>

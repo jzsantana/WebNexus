@@ -9,7 +9,7 @@ const Blog = () => {
         <div className='container-blog-1'>
             <div style={{display: 'flex', width:'100'}}>
                 <div className='separator'/>
-                <span>27/11/2023</span>
+                <span style={{fontWeight: 600}}>27/11/2023</span>
             </div>
 
             <div className='container-blog-2'>
