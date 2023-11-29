@@ -1,11 +1,12 @@
-import React from 'react'
 import './Blog.css'
+import { motion } from 'framer-motion'
 
 import BlogContent from '../../assets/blogContent.jpg'
 
 const Blog = () => {
+
   return (
-    <div className='container-blog'>
+    <motion.div className='container-blog'>
         <div className='container-blog-1'>
             <div style={{display: 'flex', width:'100'}}>
                 <div className='separator'/>
@@ -23,7 +24,7 @@ const Blog = () => {
         <div className="image-div-blog">
             <img src={BlogContent} alt="" />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

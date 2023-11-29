@@ -6,6 +6,8 @@ import NexusLogoBanner from '../../assets/Logos/nexus_logo_banner.svg'
 import './Home.css'
 import Blog from '../../components/Blog/Blog'
 import AboutContentImage from '../../assets/AboutUs.png'
+import Iphone from '../../assets/Iphone12.png'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
@@ -36,14 +38,18 @@ const Home = () => {
 
         <div className="banner-aplicatico">
             <h1>CONHEÇA NOSSO APLICATIVO</h1>
-            <div></div>
+            <div className="container-phone">
+                <img src={Iphone} alt="" />
+            </div>
+            
+            <div className="aplicativo-text"></div>
         </div>
 
-        <div className="banner-blog">
+        <motiodiv className="banner-blog">
             <h1>CONHEÇA NOSSO BLOG</h1>
             <h2>No Blog NEXUS, estamos comprometidos em trazer informações diretamente para você.</h2>
             <Blog/>
-        </div>
+        </motiodiv>
 
         <div className="sobre-nos">
             <h1>QUEM SOMOS?</h1>

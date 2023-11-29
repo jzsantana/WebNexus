@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
 import './Cadastro.css'
 import Logo from '../../assets/Logos/nexus_logo_banner.svg'
-import InputMask from 'react-input-mask';
+// import InputMask from 'react-input-mask';
 import { FaSearch } from "react-icons/fa";
+import { useState } from 'react';
 
 
 // import apiCep from '../../service/apicep.jsx';
 const Cadastro = () => {
 
     const [inputCep, setInputCep] = useState('')
-    const [cepUser, setCepUser] = useState({})
+    // const [cepUser, setCepUser] = useState({})
 
     
     async function handleSearch(event){
@@ -66,7 +66,7 @@ const Cadastro = () => {
                     </div>
 
                     <div className="input-cpf">
-                        <InputMask 
+                        <input 
                             type="text" 
                             mask={'999.999.999-99'}
                             
