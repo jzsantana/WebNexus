@@ -6,35 +6,47 @@ import { useState } from 'react';
 import ReactDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 import apiCep from '../../service/apicep';
-
+import { useForm } from "react-hook-form";
 
 // import apiCep from '../../service/apicep.jsx';
 const Cadastro = () => {
 
     // CALENDARIO
     const [selectedDate, setSelectDate] = useState(null)
-  
-
+    
+    const {register, setValue, handleSubmit} = useForm("")
     const [inputCep, setInputCep] = useState('')
-    const [cep, setCep] = useState({})
-    // const [cepUser, setCepUser] = useState({})
+
+    
 
     async function handleSearch(){
         if (inputCep === ''){
             alert('Preencha um CEP')
             return
         }
+     
+        console.log(inputCep)
         
         try{
             const responseCEP = await apiCep.get(`${inputCep}/json`)
-            setCep(responseCEP.data)
-            setInputCep("")
+            console.log(responseCEP)
+            setValue('cep', responseCEP.data.cep)
+            setValue('cidade', responseCEP.data.localidade)
+            setValue('logradouro', responseCEP.data.logradouro)
+            setValue('bairro', responseCEP.data.bairro)
+            setValue('uf', responseCEP.data.uf)
         }catch{
-            alert('Erro ao buscar o CEP, tente novvamente.')
+            alert('Erro ao buscar o CEP, tente novamente.')
             setInputCep("")
         }
-        
     }
+    
+    function handleClick(){
+        handleSearch();
+        () => setValue("cep");
+    }
+
+     
 
   return (
     <div className="cadastro">
@@ -44,7 +56,7 @@ const Cadastro = () => {
                     <h1>Junte-se ao<br></br> NEXUS Bank</h1>
                 </div>
               
-                <div className="cadastro-info-div">
+                <form onSubmit={handleSubmit} className="cadastro-info-div">
                     <div className="cad-div-logo">
                         <img src={Logo} alt="" />
                     </div>
@@ -75,43 +87,56 @@ const Cadastro = () => {
                             dateFormat='dd/MM/yyyy'
                             showYearDropdown
                             scrollableMonthYearDropdown
+    
                         />
                         {/* <span>Data de nascimento</span> */}
                     </div>
 
                     <div className="div-endereco-info">
                         <div className="input-cep">
-                            <InputMask
-                                mask={'99999-999'}
+                            <input
                                 type="text" 
                                 value={inputCep}
+                                {...register('cep')} 
                                 onChange={(e) => setInputCep(e.target.value)}
                             />
-                            <span onClick={handleSearch}><FaSearch color='#7088DD' size={20}/></span>
+                            <span onClick={handleClick}><FaSearch color='#7088DD' size={20}/></span>
                         </div>
 
                         <div className="input-cidade">
-                            <input type='text'>{cep.cidade}</input>
+                            <input type='text'
+                                {...register('cidade')}
+                            />
                             <span>Cidade</span>
                         </div>
                     </div>
                         
 
                     <div className="input-estado">
-                        <input type="text" >{cep.uf}</input>
+                        <input 
+                            type="text"
+                            {...register('uf')}
+                         />
                         <span>Estado</span>
                     </div>
 
                     <div className="input-endereco">
-                        <input type="text" >{cep.logradouro}</input>
+                        <input
+                             type="text"
+                             {...register('logradouro')}
+                             />
+                             
                         <span>Endereço</span>
                     </div>
 
                     <div className="input-bairro">
-                        <input type="text" >{cep.bairro}</input>
+                        <input 
+                            type="text" 
+                            {...register('bairro')}
+                        />
                         <span>Bairro</span>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

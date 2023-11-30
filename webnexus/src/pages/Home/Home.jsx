@@ -7,6 +7,7 @@ import './Home.css'
 import Blog from '../../components/Blog/Blog'
 import AboutContentImage from '../../assets/AboutUs.png'
 import Iphone from '../../assets/Iphone12.png'
+import IphoneBanner from '../../assets/IphoneBanner.png'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -25,7 +26,7 @@ const Home = () => {
                 <button className='btn_banner' onClick={()=> console.log(`olá`)}>CRIAR UMA CONTA AGORA</button>
             </div>
             <div className="banner-mockup">
-                <img src="" alt="" />
+            <img src={IphoneBanner} alt="" />
             </div>
         </div>
         
@@ -38,11 +39,16 @@ const Home = () => {
 
         <div className="banner-aplicatico">
             <h1>CONHEÇA NOSSO APLICATIVO</h1>
-            <div className="container-phone">
-                <img src={Iphone} alt="" />
+            <div className='container-aplicativo'>
+                <div className="container-phone">
+                    <img src={Iphone} alt="" />
+                </div>
+                
+                <div className="aplicativo-text">
+                    <h3>Com o nosso aplicativo bancário, você tem o poder de gerenciar suas finanças de forma rápida e descomplicada, tudo na palma da sua mão. </h3>
+                    <h3>É a maneira mais conveniente de lidar com seu dinheiro, onde quer que você esteja.</h3>
+                </div>
             </div>
-            
-            <div className="aplicativo-text"></div>
         </div>
 
         <motiodiv className="banner-blog">
@@ -54,9 +60,9 @@ const Home = () => {
         <div className="sobre-nos">
             <h1>QUEM SOMOS?</h1>
             <motion.div
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0, scale:0.5 }}
                 whileInView={{ opacity: 1, scale:1 }}
-                transition={{duration:1}}
+                transition={{duration:0.6}}
                 className="container-about-us"
             >
                 <div className="content-about-us-1">

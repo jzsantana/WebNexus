@@ -11,15 +11,27 @@
     display: flex;
     flex-direction: row;
     padding: 5rem;
-
+    justify-content: center;
+    align-items: center;
     background-color: rgb(12, 12, 12);
+}
+
+.banner-mockup{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-mockup img{
+    height: 627px;
 }
 
 .banner-content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    width: 50%;
     height: auto;
 }
 
@@ -86,20 +98,50 @@
 https://codepen.io/fydsa/pen/VwWXdZm
  */
 
-.banner-aplicatico{
+ .banner-aplicatico{
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--background-color);
-    gap: 2rem;
+    color: var(--branco);
+    padding: 3.5rem;
 }
 
 .banner-aplicatico img{
-    width: 295;
     height: 531px;
+}
+
+.container-aplicativo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.aplicativo-text{
+    width: 40%;
+    height: 30%;
+    font-size: 22px;
+    background-color: aquamarine;
+    border-radius: 25px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-iphone{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: " ";
 }
 
 .banner-blog{

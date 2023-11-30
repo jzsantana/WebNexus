@@ -7,9 +7,9 @@ const Blog = () => {
 
   return (
     <motion.div 
-        initial={{ opacity: 0, scale: 0 }}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, scale:1 }}
-        transition={{duration:1}}
+        transition={{duration:0.6}}
     className='container-blog'>
         <div className='container-blog-1'>
             <div style={{display: 'flex', width:'100'}}>
