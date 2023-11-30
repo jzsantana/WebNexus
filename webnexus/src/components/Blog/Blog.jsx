@@ -6,7 +6,11 @@ import BlogContent from '../../assets/blogContent.jpg'
 const Blog = () => {
 
   return (
-    <motion.div className='container-blog'>
+    <motion.div 
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale:1 }}
+        transition={{duration:1}}
+    className='container-blog'>
         <div className='container-blog-1'>
             <div style={{display: 'flex', width:'100'}}>
                 <div className='separator'/>

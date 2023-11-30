@@ -53,7 +53,12 @@ const Home = () => {
 
         <div className="sobre-nos">
             <h1>QUEM SOMOS?</h1>
-            <div className="container-about-us">
+            <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale:1 }}
+                transition={{duration:1}}
+                className="container-about-us"
+            >
                 <div className="content-about-us-1">
                     <p>No NEXUS Bank, acreditamos que a transparência é a base da confiança. Comprometemo-nos a fornecer soluções bancárias acessíveis e seguras, respaldadas por uma equipe dedicada que valoriza a excelência no atendimento ao cliente.</p>
                     <p>Com uma abordagem centrada nas pessoas, buscamos simplificar o universo financeiro, tornando cada interação bancária intuitiva e eficiente. Explore as possibilidades conosco e descubra um novo padrão em serviços bancários, onde seu futuro financeiro encontra-se no centro de tudo que fazemos.</p>
@@ -65,7 +70,7 @@ const Home = () => {
                         <img src={AboutContentImage} alt="" style={{width: 350, height:350}}/>
                     </div>  
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
