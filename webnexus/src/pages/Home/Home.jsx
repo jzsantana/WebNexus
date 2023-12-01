@@ -56,11 +56,11 @@ const Home = () => {
             </div>
         </div>
 
-        <motiodiv className="banner-blog">
+        <div className="banner-blog">
             <h1>CONHEÇA NOSSO BLOG</h1>
             <h2>No Blog NEXUS, estamos comprometidos em trazer informações diretamente para você.</h2>
             <Blog/>
-        </motiodiv>
+        </div>
 
         <div className="sobre-nos">
             <h1>QUEM SOMOS?</h1>
