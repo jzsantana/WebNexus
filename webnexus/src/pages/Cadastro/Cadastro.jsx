@@ -110,7 +110,6 @@ const Cadastro = () => {
                             <span>Cidade</span>
                         </div>
                     </div>
-                        
 
                     <div className="input-estado">
                         <input 
