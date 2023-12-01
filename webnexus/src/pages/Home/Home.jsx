@@ -41,13 +41,18 @@ const Home = () => {
             <h1>CONHEÇA NOSSO APLICATIVO</h1>
             <div className='container-aplicativo'>
                 <div className="container-phone">
+
                     <img src={Iphone} alt="" />
                 </div>
                 
-                <div className="aplicativo-text">
+                <motion.div className="aplicativo-text"
+                    initial={{ opacity: 0, scale:0.5 }}
+                    whileInView={{ opacity: 1, scale:1 }}
+                    transition={{duration:0.6}}
+                >
                     <h3>Com o nosso aplicativo bancário, você tem o poder de gerenciar suas finanças de forma rápida e descomplicada, tudo na palma da sua mão. </h3>
                     <h3>É a maneira mais conveniente de lidar com seu dinheiro, onde quer que você esteja.</h3>
-                </div>
+                </motion.div>
             </div>
         </div>
 

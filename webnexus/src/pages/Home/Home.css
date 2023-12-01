@@ -114,7 +114,16 @@ https://codepen.io/fydsa/pen/VwWXdZm
     height: 531px;
 }
 
+.iphone-card{
+    position:absolute;
+    height: 10%;
+    width: 10%;
+    background-color: #fff;
+    
+}
+
 .container-aplicativo{
+    padding: 1.5rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -127,7 +136,8 @@ https://codepen.io/fydsa/pen/VwWXdZm
     width: 40%;
     height: 30%;
     font-size: 22px;
-    background-color: aquamarine;
+    font-weight: 500;
+    background-color: #212121;
     border-radius: 25px;
     padding: 1.5rem;
     display: flex;
@@ -213,4 +223,42 @@ https://codepen.io/fydsa/pen/VwWXdZm
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+/* MEDIA QUERYS PARA RESPONSIVIDADE */
+
+/* NOTEBOOK, ME BASEEI NO MEU NOTEBOOK PARA FAZER */
+@media (max-width: 1640px) {
+    .aplicativo-text{
+        width: 45%;
+        height: 45%;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+
+    .banner-aplicatico img{
+        height: 468px;
+    }
+    .banner-mockup img{
+        height: 527px;
+    }
+    .banner-content-text{
+        width: 60%;
+    }
+
+    .content-about-us-2{
+        width: 40%;
+        height: 70%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+    
+    .content-about-us-1 p{
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Archivo';
+    }
 }

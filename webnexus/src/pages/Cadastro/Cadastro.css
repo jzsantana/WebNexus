@@ -98,9 +98,7 @@
     font-weight: 600;
 }
 
-.input-nome input:focus, .input-cpf input:focus, .input-email input:focus, 
-.input-nascimento input:focus,.input-estado input:focus, .input-endereco input:focus, 
-.input-bairro input:focus, .input-cep input:focus, .input-cidade input:focus{
+input{
     border: none;
     outline-offset: 0px;
     outline: none;

@@ -28,27 +28,8 @@
     --card-color-one: #92AAFF;
     --white: #fff;
     --green: #60DDE5;
-    --card-color-two: transparent;
-}
 
-ex{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 300px;
-    height: 95px;
-    border-radius: 15px;
-    background-image: linear-gradient(
-      to bottom right,
-      var(--tabs-bg-one),
-      var(--tabs-bg-two)
-    );
-    box-shadow: -1.5px -1.5px 2px -2px var(--white),
-      5px 5px 30px rgb(0, 0, 0, 0.2);
-    border: 0.5px solid;
-    border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
-    rgba(255, 255, 255, 0.3);
+    --card-color-two: transparent;
 }
 
 .cartao-demostrativo{
@@ -57,8 +38,23 @@ ex{
     /* padding: 1rem; */
     height: 11rem;
     border-radius: .8rem;
+}
 
-    background-image: linear-gradient(
+.cd-1{
+  background-image: linear-gradient(
+      to bottom right,
+      var(--white),
+      var(--card-color-two)
+    );
+    box-shadow: -1.5px -1.5px 2px -2px var(--white),
+      5px 5px 30px rgb(0, 0, 0, 0.2);
+    border: 0.5px solid;
+    border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
+    rgba(255, 255, 255, 0.3);
+}
+
+.cd-2{
+  background-image: linear-gradient(
       to bottom right,
       var(--green),
       var(--card-color-two)
@@ -68,9 +64,20 @@ ex{
     border: 0.5px solid;
     border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
     rgba(255, 255, 255, 0.3);
-
 }
 
+.cd-3{
+  background-image: linear-gradient(
+      to bottom right,
+      var( --card-color-one),
+      var(--card-color-two)
+    );
+    box-shadow: -1.5px -1.5px 2px -2px var(--white),
+      5px 5px 30px rgb(0, 0, 0, 0.2);
+    border: 0.5px solid;
+    border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
+    rgba(255, 255, 255, 0.3);
+}
 
 /* .cartao-demostrativo{
     margin-bottom: 2.8rem;

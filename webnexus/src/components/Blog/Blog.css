@@ -95,7 +95,7 @@
 
 @media only screen and (max-width: 1650px) {
     .container-blog-1 p:hover::after{
-        width: 25%;
+        width: 34%;
     }
     .image-div-blog img{
         width: 400px;
