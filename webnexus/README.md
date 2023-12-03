@@ -1,8 +1,16 @@
-# React + Vite
+# WebNexus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## como rodar o projeto
 
-Currently, two official plugins are available:
+```
+   >> git clone https://github.com/jzsantana/WebNexus.git
+   >> cd webnexus
+```
+como eu coloquei o projeto em si dentro de uma subpasta é necessario entrar nesta subpasta depois de entrar na pasta do repositório:
+```
+    >> cd webnexus
+    >> npm install
+    >> npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deixei uma conta preparada para efetuar o login:
