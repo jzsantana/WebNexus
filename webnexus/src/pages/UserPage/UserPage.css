@@ -8,11 +8,13 @@
     background-color: var(--nav-color);
     align-items: center;
     color: antiquewhite;
+    font-family: 'Archivo';
+    
 }
 
 .container-principal-userpage{
     width: 100%;
-    height: 89vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,10 +27,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: var(--nav-color);
     width: 50%;
     height: 60%;
     border-radius:1.5rem ;
+    color: #fff;
+    font-family: 'Archivo';
+    font-size: 16px;
+    gap: 2.5rem;
 
     -webkit-box-shadow: 0px 0px 117px 5px rgba(46,45,46,0.84);
     -moz-box-shadow: 0px 0px 117px 5px rgba(46,45,46,0.84);
@@ -46,10 +53,12 @@
 .cartao-userpage{
     position: relative;
     display: flex;
-    justify-content: space-around;
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 95px;
+    width: 320px;
+    height: 125px;
     border-radius: 15px;
     background-image: linear-gradient(
       to bottom right,
@@ -63,3 +72,24 @@
     rgba(255, 255, 255, 0.3);
 }
 
+.btn-eye-user-page{
+    background-color: transparent;
+    border: none;
+}
+.cartao-info-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cartao-info-1 p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.53);
+}
+
+cartao-info-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

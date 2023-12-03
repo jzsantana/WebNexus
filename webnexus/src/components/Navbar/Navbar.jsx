@@ -1,7 +1,6 @@
 import React from 'react'
 import './Navbar.css'
 import NexusLogo from '../../assets/Logos/NEXUSlogo.svg'
-import {TfiMenu} from 'react-icons/tfi'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -18,10 +17,8 @@ const Navbar = () => {
 
         <div className='container-botoes-nav'>
               <Link to='/login'><button className='btn-sign-in'>ENTRAR</button></Link>
-              <Link to='/cadastro'><button className='btn-sign-up'>CADASTRAR</button></Link>
+              {/* <Link to='/cadastro'><button className='btn-sign-up'>CADASTRAR</button></Link> */}
         </div>
-        {/* menu hamburguer para responsividade */}
-        <TfiMenu color='white' size={20} display='none' />
     </div>
   )
 }

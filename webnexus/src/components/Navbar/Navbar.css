@@ -68,3 +68,10 @@
     transition: .5s;
     color: #000;
 }
+
+@media (max-width: 400px){
+    .nav-list{
+        display: none;
+    }
+    
+}

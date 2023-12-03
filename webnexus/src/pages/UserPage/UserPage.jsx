@@ -1,6 +1,6 @@
-import React from 'react'
 import './UserPage.css'
 import NexusLogo from '../../assets/Logos/NEXUSlogo.svg'
+import { FaRegEye } from "react-icons/fa";
 
 const UserPage = () => {
   return (
@@ -11,17 +11,26 @@ const UserPage = () => {
 
         <div className="container-principal-userpage">
           <div className="card-user-information">
-            <p>Olá, Júlia. Bem vinda(o) de volta!</p>
+            <p>Olá, . Bem vinda(o) de volta!</p>
 
             <div className="cartao-userpage">
+              <div className='cartao-info-1'>
+                <p>Agencia <span style={{marginLeft: '3px', fontSize: '15px', color: '#fff', fontWeight: 500}}>0001</span></p>
+                <p>Conta <span style={{marginLeft: '3px', fontSize: '15px', color: '#fff'}}>123456</span></p>
+              </div>
               
 
-
+              <div className='cartao-info-2'>
+                <p>Saldo</p>
+                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
+                  <p>R$</p>
+                  <p>1000.00</p>
+                  <button className='btn-eye-user-page'><FaRegEye color='white' size={20}/></button>
+                </div>
+                  
+              </div>
             </div>
-
-            
           </div>
-          
         </div>
     </>
   )

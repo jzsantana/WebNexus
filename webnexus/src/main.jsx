@@ -1,11 +1,10 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {createBrowserRouter, RouterProvider,BrowserRouter, Routes, Route} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './index.css'
 
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
-import Cadastro from './pages/Cadastro/Cadastro'
+// import Cadastro from './pages/Cadastro/Cadastro'
 import UserPage from './pages/UserPage/UserPage'
 
 const router = createBrowserRouter([
@@ -17,10 +16,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>
   },
-  {
-    path: "/cadastro",
-    element: <Cadastro/>
-  },
+  // {
+  //   path: "/cadastro",
+  //   element: <Cadastro/>
+  // },
   {
     path: "/userpage",
     element: <UserPage/>
