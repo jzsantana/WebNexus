@@ -9,7 +9,7 @@ import { NexusAPI } from '../../service/reducers/NexusAPI'
 
 const Login = () => {
 
-    const [state, dispatch] = useUser()
+    const {state, dispatch} = useUser();
 
     const [cpf, setCpf] = useState('');
     const [password, setPassword] = useState('')
@@ -18,25 +18,26 @@ const Login = () => {
         console.log(state.token);
     }, [state.token])
 
-    const loginUser = async (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
       
         try {
           const login = await NexusAPI.post(
-            `auth/users/`,
+            `auth/token/login`,
             {
               cpf: cpf,
               password: password,
             },
             {
               headers: {
-                'Authorization': `Token 1fddfcc014afbdd76f09badada7cc81532c0aea8`,
+                'Authorization': `Token ${state.token}`,
               },
             }
+            
           );
       
-          dispatch({ type: 'SET_TOKEN', payload: login.data.auth_token });
-      
+          dispatch({ type: 'SET_TOKEN', payload: login.data.auth_token});
+          
         } catch (error) {
           console.error('Erro ao fazer login:', error.response.data);
         }
@@ -51,7 +52,7 @@ const Login = () => {
                     <h1>Bem-vindo <br></br>de volta!</h1>
                 </div>
                 
-                <form onSubmit={loginUser} className='login-info-div'>
+                <form onSubmit={handleSubmit} className='login-info-div'>
                     <div className='login-div-logo'>
                         <img src={Logo} alt="" />
                     </div>

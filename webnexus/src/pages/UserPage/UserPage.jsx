@@ -1,10 +1,11 @@
 import './UserPage.css'
 import NexusLogo from '../../assets/Logos/NEXUSlogo.svg'
 import { FaRegEye } from "react-icons/fa";
+import { UserProvider } from '../../service/reducers/AxiosInstance';
 
 const UserPage = () => {
   return (
-    <>
+    <UserProvider>
         <div className="navbar-userpage">
             <img src={NexusLogo} alt="Logo do banco Nexus" />
         </div>
@@ -19,7 +20,6 @@ const UserPage = () => {
                 <p>Conta <span style={{marginLeft: '3px', fontSize: '15px', color: '#fff'}}>123456</span></p>
               </div>
               
-
               <div className='cartao-info-2'>
                 <p>Saldo</p>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
@@ -32,7 +32,7 @@ const UserPage = () => {
             </div>
           </div>
         </div>
-    </>
+    </UserProvider>
   )
 }
 

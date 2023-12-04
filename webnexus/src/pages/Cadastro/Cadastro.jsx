@@ -1,6 +1,5 @@
 import './Cadastro.css'
 import Logo from '../../assets/Logos/nexus_logo_banner.svg'
-// import InputMask from 'react-input-mask';
 import { FaSearch } from "react-icons/fa";
 import { useState } from 'react';
 import ReactDatePicker from 'react-datepicker';
@@ -16,8 +15,6 @@ const Cadastro = () => {
     
     const {register, setValue, handleSubmit} = useForm("")
     const [inputCep, setInputCep] = useState('')
-
-    
 
     async function handleSearch(){
         if (inputCep === ''){
@@ -45,8 +42,6 @@ const Cadastro = () => {
         handleSearch();
         () => setValue("cep");
     }
-
-     
 
   return (
     <div className="cadastro">
