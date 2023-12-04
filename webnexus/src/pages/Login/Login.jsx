@@ -14,8 +14,11 @@ const Login = () => {
     const [cpf, setCpf] = useState('');
     const [password, setPassword] = useState('')
 
+    console.log();
+    console.log();
+
     useEffect(() =>{
-        console.log(state.token);
+        console.log('token: ', state.token);
     }, [state.token])
 
     const handleSubmit = async (event) => {
@@ -23,20 +26,22 @@ const Login = () => {
       
         try {
           const login = await NexusAPI.post(
-            `auth/token/login`,
+            `auth/token/login/`,
             {
               cpf: cpf,
               password: password,
             },
             {
               headers: {
-                'Authorization': `Token ${state.token}`,
+                'Authorization': `Token 7b96e28ebf1e937d431dc945b6fcf9101f0aba9e`,
               },
             }
-            
           );
-      
+  
           dispatch({ type: 'SET_TOKEN', payload: login.data.auth_token});
+          const getLogin = await NexusAPI.get(`auth/token/login/${login.data.auth_token}`)
+          console.log(login.data)
+          
           
         } catch (error) {
           console.error('Erro ao fazer login:', error.response.data);
