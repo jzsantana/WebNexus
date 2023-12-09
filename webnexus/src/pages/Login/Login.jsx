@@ -1,52 +1,42 @@
 import { FaLock, FaUserLarge} from 'react-icons/fa6'
 import Logo from '../../assets/Logos/nexus_logo_banner.svg'
 import './Login.css'
-import { Link } from 'react-router-dom'
-import { useUser } from '../../service/reducers/AxiosInstance'
-import { useEffect, useState } from 'react'
-import { NexusAPI } from '../../service/reducers/NexusAPI'
+import {useNavigate } from 'react-router-dom'
+// import { useUser } from '../../service/reducers/AxiosInstance'
+// import { useEffect, useState } from 'react'
+import { NexusAPI } from '../../service/api/NexusAPI'
+import { useState } from 'react'
+import { useAuth } from '../../service/reducers/AxiosInstance'
 
 
 const Login = () => {
 
-    const {state, dispatch} = useUser();
+    // const {state, dispatch} = useUser();
+  const nav = useNavigate()
 
-    const [cpf, setCpf] = useState('');
-    const [password, setPassword] = useState('')
+  console.log();
+  console.log();
 
-    console.log();
-    console.log();
+    const { login } = useAuth();
+  const [cpf, setCpf] = useState('');
+  const [password, setPassword] = useState('');
 
-    useEffect(() =>{
-        console.log('token: ', state.token);
-    }, [state.token])
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await NexusAPI.post('auth/token/login', {
+        cpf: cpf,
+        password: password,
+      });
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-      
-        try {
-          const login = await NexusAPI.post(
-            `auth/token/login/`,
-            {
-              cpf: cpf,
-              password: password,
-            },
-            {
-              headers: {
-                'Authorization': `Token 7b96e28ebf1e937d431dc945b6fcf9101f0aba9e`,
-              },
-            }
-          );
+      const { auth_token } = response.data;
+      login(auth_token);
+      nav('/userpage')
+    } catch (error) {
+      console.error('Erro ao fazer login:', error.response ? error.response.data : error.message);
+    }
+  };
   
-          dispatch({ type: 'SET_TOKEN', payload: login.data.auth_token});
-          const getLogin = await NexusAPI.get(`auth/token/login/${login.data.auth_token}`)
-          console.log(login.data)
-          
-          
-        } catch (error) {
-          console.error('Erro ao fazer login:', error.response.data);
-        }
-      };
       
   return (
     <div className='login'>
@@ -81,12 +71,12 @@ const Login = () => {
                         />
                     </div>
                     <p className='forgot-password'>Esqueceu a senha?</p>
-                    <Link to={"/userpage"}>
+                    {/* <Link> */}
                         <button 
                             className="btn-info-login"
                             type='submit'
                             >LOGIN</button>
-                    </Link>
+                    {/* </Link> */}
                     
                 </form>
             </div>

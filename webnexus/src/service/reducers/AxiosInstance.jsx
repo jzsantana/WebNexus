@@ -1,36 +1,28 @@
-import React, { createContext, useContext, useReducer } from 'react';
+// AuthContext.js
+import { createContext, useContext, useState } from 'react';
 
-const UserContext = createContext();
+const AuthContext = createContext();
 
-const initialState = {
-  token: null,
-};
+const AuthProvider = ( {children} ) => {
+  const [authToken, setAuthToken] = useState(null);
 
-const userReducer = (state, action) => {
-  switch (action.type) {
-    case 'SET_TOKEN':
-      return { ...state, token: action.payload };
-    default:
-      return state;
-  }
-};
+  const login = (token) => {
+    setAuthToken(token);
+  };
 
-const UserProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(userReducer, initialState);
+  const logout = () => {
+    setAuthToken(null);
+  };
 
   return (
-    <UserContext.Provider value={{ state, dispatch }}>
+    <AuthContext.Provider value={{ authToken, login, logout }}>
       {children}
-    </UserContext.Provider>
+    </AuthContext.Provider>
   );
 };
 
-const useUser = () => {
-  const context = useContext(UserContext);
-  if (!context) {
-    throw new Error('useUser must be used within a UserProvider');
-  }
-  return context;
+const useAuth = () => {
+  return useContext(AuthContext);
 };
 
-export { UserProvider, useUser };
+export { AuthProvider, useAuth };
